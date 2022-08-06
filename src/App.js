@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import Header from "./component/layout/Header";
+import Meals from "./component/Meals/Meals";
 import MealsSummary from "./component/Meals/MealsSummary";
 
 
@@ -10,6 +11,7 @@ const  App=()=> {
       <main>
         <MealsSummary/>
       </main>
+      <Meals/>
             
     </Fragment>
   );
