@@ -32,8 +32,10 @@ const AvailableMeals=()=>{
     const dummMeals = DUMMY_MEALS.map(meal=> <li>{meal.name }</li>)
     return(
 
-        <div >
-            <h2 className={styles.meals}>{dummMeals}</h2>
+        <div className={styles.meals}>
+        <ul>
+            <li>{dummMeals}</li>
+        </ul>            
         </div>
     )
 }
