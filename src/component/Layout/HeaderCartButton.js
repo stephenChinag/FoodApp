@@ -4,9 +4,10 @@ const HeaderCartButton=()=>{
     return(
         <button className={styles.button}>
          <span className={styles.icon}><CartIcon/></span>
-         <span className={styles.bump}><h3>Your Cart</h3></span>
+         <span className={styles.bump}>Your Cart</span>
          <span className={styles.badge}>2</span>
         </button>
+     
     )
 
 }
