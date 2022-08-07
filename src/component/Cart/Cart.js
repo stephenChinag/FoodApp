@@ -1,3 +1,5 @@
+
+import Modal from '../UI/Modal'
 import styles from './Cart.module.css'
 
 const Cart=(props)=>{
@@ -9,17 +11,19 @@ const Cart=(props)=>{
     }].map(item=><li>{item.name}</li>)}</ul>
 
 return (
-    <div>
+  
+   <Modal onClick={props.onClose}>
         {cartItem}
         <div className={styles.total}>
     <span>TotalAmount</span>
     <span>25.98</span>
         </div>
-        <div className={styles.action}>
-    <button className={styles[`button--alt`]}>Close</button>
+        <div className={styles.actions}>
+    <button onClick={props.onClose} className={styles[`button--alt`]}>Close</button>
    <button className={styles.button}>Order</button>    
         </div>
-    </div>
+    </Modal>
+    
 )
 }
 export default Cart
