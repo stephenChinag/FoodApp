@@ -16,12 +16,22 @@ const HeaderCartButton=(props)=>{
       return total + item.amount;
   },0 )
 
-    const btnClasses=`${styles.button} ${styles.bump}`
+    const btnClasses=`${styles.button} ${btnIsHilghted ?  styles.bump : ''}`
   
-  
+  const {items}=cartCtx
     useEffect(()=>{
+        if (items.length===0){
+            return;
+        }
+        const timer =setBtnIsHighlited(true);
+        setTimeout(()=>{
+            setBtnIsHighlited(false)
 
-   },[])
+        }, 300)
+        return()=>{
+            clearTimeout(timer)
+        }
+   },[items])
     
 
     return(
