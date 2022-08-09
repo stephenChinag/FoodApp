@@ -7,7 +7,7 @@ const DUMMY_MEALS = [
       id: 'm1',
       name: 'Garri&Egwusi',
       description: 'African Food',
-      price: 22.99,
+      price: 13.22,
     },
     {
       id: 'm2',
@@ -24,7 +24,7 @@ const DUMMY_MEALS = [
     {
       id: 'm4',
       name: 'Pasta ',
-      description: 'Healthy...and green...',
+      description: 'be wise Mange your Money',
       price: 18.99,
     },
   ];
